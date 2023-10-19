@@ -22,6 +22,16 @@ export const authApiSlice = apiSlice.injectEndpoints({
         method: 'POST',
         body: userDetails,
       }),
+      invalidatesTags: [
+        'User',
+        'ReturnReason',
+        'Category',
+        'Size',
+        'Coupon',
+        'Product',
+        'Users',
+        'Order',
+      ],
     }),
     forgotPassword: builder.mutation({
       query: (userDetails) => ({
@@ -42,6 +52,16 @@ export const authApiSlice = apiSlice.injectEndpoints({
         url: '/auth/logout',
         method: 'DELETE',
       }),
+      invalidatesTags: [
+        'User',
+        'ReturnReason',
+        'Category',
+        'Size',
+        'Coupon',
+        'Product',
+        'Users',
+        'Order',
+      ],
     }),
   }),
 });
