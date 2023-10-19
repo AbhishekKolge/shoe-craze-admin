@@ -6,7 +6,7 @@ const OrdersCard = (props) => {
       <div className='fs-8'>
         <div className='card'>
           <div className='card-header d-flex align-items-center justify-content-between'>
-            <h4 className='card-title'>{`Users (${totalOrders})`}</h4>
+            <h4 className='card-title'>{`Orders (${totalOrders})`}</h4>
           </div>
           <div className='card-body'>
             <div className='d-flex flex-column gap-3'>
