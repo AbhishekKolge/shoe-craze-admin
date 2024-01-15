@@ -73,8 +73,8 @@ const LoginForm = () => {
   });
 
   const testAdminLoginHandler = (e) => {
-    formik.setFieldValue('email', process.env.NEXT_PUBLIC_TEST_EMAIL);
-    formik.setFieldValue('password', process.env.NEXT_PUBLIC_TEST_PASSWORD);
+    formik.setFieldValue('email', process.env.EMAIL);
+    formik.setFieldValue('password', process.env.PASSWORD);
   };
 
   return (

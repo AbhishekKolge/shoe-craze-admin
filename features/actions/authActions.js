@@ -54,7 +54,7 @@ const loginHandler = (authDetails) => {
     const { userId } = authDetails;
 
     const accessExpirationTime =
-      Date.now() + +process.env.NEXT_PUBLIC_ACCESS_EXPIRATION_TIME;
+      Date.now() + +process.env.ACCESS_EXPIRATION_TIME;
 
     saveAuthToLocal({
       accessExpirationTime,

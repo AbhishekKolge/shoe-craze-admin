@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import { logoutHandler } from '../../features/actions/authActions';
 
 const baseQuery = fetchBaseQuery({
-  baseUrl: process.env.NEXT_PUBLIC_URL,
+  baseUrl: process.env.BASE_URL,
   credentials: 'include',
   prepareHeaders: (headers) => {
     return headers;
